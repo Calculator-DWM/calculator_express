@@ -6,16 +6,16 @@ class Operation extends Model {}
 Operation.init(
   {
     num1: {
-        type: DataTypes.NUMBER,
+        type: DataTypes.DECIMAL,
     },
     num2: {
-        type: DataTypes.NUMBER,
+        type: DataTypes.DECIMAL,
     },
     operation: {
         type: DataTypes.STRING,
     },
     result: {
-        type: DataTypes.NUMBER,
+        type: DataTypes.DECIMAL,
     },
   },
   {
