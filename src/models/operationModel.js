@@ -21,7 +21,7 @@ Operation.init(
   {
     sequelize,
     modelName: "operation",
-    timestamps: false,
+    timestamps: true,
   }
 );
 
