@@ -36,7 +36,7 @@ module.exports = {
       await Operation.create({ num1, num2, operation, result: result });
       return res
         .status(200)
-        .json({ result: `${num1} ${operation} ${num2} = ${result}` });
+        .json({ result });
     } catch (error) {
       return res.status(400).json({ message: `${error}` });
     }
