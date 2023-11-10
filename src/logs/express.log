@@ -1,0 +1,39 @@
+
+Request: POST /calculator/calc at Fri Nov 10 2023 16:02:57 GMT-0300, IP: ::1, User Agent: PostmanRuntime/7.35.0
+Request Body:
+{
+	"num1": 10.2,
+	"num2": 2,
+	"operation": "/"
+}
+Response Body:
+{
+	"result": 5.1
+}
+Response: 200 285.334 ms 
+
+Request: POST /calculator/calc at Fri Nov 10 2023 16:03:14 GMT-0300, IP: ::1, User Agent: PostmanRuntime/7.35.0
+Request Body:
+{
+	"num1": 10.2,
+	"num2": 5,
+	"operation": "/"
+}
+Response Body:
+{
+	"result": 2.04
+}
+Response: 200 2061.355 ms 
+
+Request: POST /calculator/calc at Fri Nov 10 2023 16:15:14 GMT-0300, IP: ::1, User Agent: PostmanRuntime/7.35.0
+Request Body:
+{
+	"num1": 1,
+	"num2": 2,
+	"operation": "+"
+}
+Response Body:
+{
+	"result": 3
+}
+Response: 200 255.076 ms 
