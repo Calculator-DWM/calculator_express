@@ -5,6 +5,7 @@ const morganBody = require("morgan-body");
 const Routes = require("./routes/routes");
 const fs = require("fs");
 const path = require("path");
+const cors = require("cors");
 
 const app = express();
 
@@ -21,6 +22,18 @@ morganBody(app, {
   noColors: true,
   stream: log,
 });
+
+//Configuração de CORS para acesso
+const corsOptions = {
+  origin: "*",
+  credentials: true,
+  methods: "GET,PUT,POST,OPTIONS, DELETE",
+};
+app.use(cors(corsOptions));
+
+app.get("/", (req, res) => {
+  res.send("API está no ar!")
+})
 
 app.use("/calculator", Routes);
 
